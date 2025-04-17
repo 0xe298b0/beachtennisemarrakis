@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune-Inspired Beach Tennis Tournament</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2d2a9;
+            margin: 0;
+            padding: 0;
+            color: #5e3b1f;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 20, 50 10 T 100 10' stroke='%23e6c088' stroke-width='2' fill='none' /%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-size: 100px;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: rgba(246, 231, 209, 0.8);
+            padding: 20px;
+            border: 2px solid #b28855;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            background-color: #0078b3; /* Ocean blue */
+            color: #f9f2e3;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #00537e;
+            margin-bottom: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' stroke='%230094d9' stroke-width='2' fill='none' /%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px #005c8a;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #b25900;
+            border-bottom: 2px solid #b25900;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .section {
+            background-color: #f9f2e3;
+            border: 1px solid #d9bf96;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Grid layout for competitors and teams */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .profile {
+            background-color: #fdfaf3;
+            border: 1px solid #d9bf96;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #b28855;
+        }
+
+        .profile h3 {
+            margin: 10px 0 5px;
+            color: #7b5427;
+        }
+
+        .profile p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        /* Tournament brackets section */
+        .brackets {
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Prizes section */
+        .prizes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .prize {
+            width: 30%;
+            background-color: #fdfaf3;
+            border: 1px solid #d9bf96;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .prize h3 {
+            color: #b25900;
+            margin-top: 0;
+        }
+
+        /* Prize image styling */
+        .prize-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #b28855;
+            margin: 10px auto;
+            display: block;
+        }
+
+        .prize-description {
+            font-size: 14px;
+            font-style: italic;
+            color: #7b5427;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #7b5427;
+            margin-top: 20px;
+            border-top: 1px solid #d9bf96;
+        }
+
+        /* Early 2000s navigation style */
+        nav {
+            background-color: #d9bf96;
+            padding: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #5e3b1f;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin: 0 5px;
+            font-weight: bold;
+            border: 1px solid #b28855;
+            background-color: #f2d2a9;
+        }
+
+        nav a:hover {
+            background-color: #e6c088;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> 🏜️🎾 PRIMEIRO CAMPEONATO DE BEACH TENNIS DE ARRAKIS 🎾🏜️</h1>
+            <p>Where the spice flows and the serves are hot!</p>
+        </header>
+
+        <nav>
+            <a href="#competitors">Não Declarados</a>
+            <a href="#teams">Times</a>
+            <a href="#brackets">Campeonato</a>
+            <a href="#prizes">Prêmios</a>
+        </nav>
+
+        <div class="section" id="competitors">
+            <h2>SENHORAS E SENHORES NÃO DECLARADOS</h2>
+            <div class="grid">
+                <div class="profile">
+                    <img src="clarat.jpg" alt="Competitor 1">
+                    <h3>Clara Tavares</h3>
+                    <p>Bio: Com uma infância marcada pelo sofrimento nas fábricas de batata de um agri-mundo, Clara passava dias e noites cortando batatas no formato chips para a fábrica de um nobre local, mas ela nunca desistiu e após longos anos de formação numa guilda espacial, finalmente conseguiu se desvencilhar de seu antigo trabalho, mas seu pulso nunca se esqueceu dos momentos de trabalho e sofrimento e por isso se manteve firme igual uma rocha! </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="teams">
+            <h2>TIMES</h2>
+            <div class="grid">
+                <div class="profile">
+                    <img src="raidanara.jpg" alt="Team 1">
+                    <h3>Casa Raidanara</h3>
+                    <p>Membros: Nara e Raidan</p>
+                    <p>Bio: Oriundos dos labirintos administrativos e burocráticos de um planeta na parte interna do Império, essa não é uma dupla que você conseguirá vencer pelo cansaço, eles estão acostumados a levarem porrada nas cortes (de justiça) e resistirão ainda mais nas cortes de tênis!</p>
+                    <p><h4>Habilidade</h4>
+                        SUGAR SACRIFICE シュガー・サクリファイス (Shugā Sakurifaisu)
+                        <br>
+                        <br>
+
+                        Ao consumir qualquer docinho, Raidan entra em um estado de êxtase e sua performance esportiva aumenta em 300% por um set!
+
+
+                    </p>
+                </div>
+                <div class="profile">
+                    <img src="Marlly.jpg" alt="Team 1">
+                    <h3>Casa Marlly</h3>
+                    <p>Membros: Marcela e Kelly</p>
+                    <p>Bio: Com quase uma década de familiariedade, esse casal não irá se confundir na quadra. Elas conhecem os movimentos uma da outra e conseguem se orientar apenas pela AURA, anos de experiência com mestres de obra e obras no geral transformaram seus olhos em verdadeiras calculadoras, se elas não fossem lésbicas nenhum homem conseguiria enganá-las sobre o tamanho de seus pintos, pois elas conseguem bater o olho e falar exatamente quantos cm são necessários num ajuste de gesso!</p>
+                    <p><h4>Habilidade</h4>
+                        PRIVATE EYES プライバート・アイズ (Puraibāto Aizu) 
+                        <br>
+                        <br>
+                        Conseguem saber com precisão se a bola irá para fora ou não!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="brackets">
+            <h2>CHAVES DO CAMPEONATO</h2>
+            <div class="brackets">
+                <p>Quando definidas as chaves por sorteio elas ficarão aqui</p>
+                <img src="/api/placeholder/700/350" alt="Tournament Brackets">
+            </div>
+        </div>
+
+        <div class="section" id="prizes">
+            <h2>PRÊMIOS</h2>
+            <div class="prizes">
+                <div class="prize">
+                    <h3>Primeiro Lugar</h3>
+                    <img src="bookstand.JPG" alt="First Place Prize" class="prize-image">
+                    <p>🏆 Troféu Raquete de Ouro</p>
+                    <p class="prize-description">Um lindo bookstand feito na imagem dos sagrados Shai-Hulud (vai vir em outra cor)</p>
+                </div>
+                <div class="prize">
+                    <h3>Segundo Lugar</h3>
+                    <img src="fresco.jpg" alt="Second Place Prize" class="prize-image">
+                    <p>🥈 Medalha de Prata</p>
+                    <p class="prize-description">Vocês chegou perto de conquistar as areias urbanas, espero que encontre tempo para treinar com esse kit de frescobol!</p>
+                </div>
+                <div class="prize">
+                    <h3>Terceiro Lugar</h3>
+                    <img src="capi.jpg" alt="Third Place Prize" class="prize-image">
+                    <p>🥉 Medalha de Bronze</p>
+                    <p class="prize-description">Alcancem novos patamares nas suas vidas sexuais with ONE SIMPLE TRICK</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Arrakis Beach Tennis Tournament™ | The spice must flow!
+        </footer>
+    </div>
+</body>
+</html>
